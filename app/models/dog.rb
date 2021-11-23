@@ -4,4 +4,5 @@ class Dog < ApplicationRecord
   validates :dog_name, presence: true
   validates :description
   validates :breed, presence: true
+  validates :location, presence: true
 end
