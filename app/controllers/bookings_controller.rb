@@ -11,9 +11,14 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     if @booking.end_time < @booking.start_time
     else
+<<<<<<< HEAD
       @booking.save
     end
 
+=======
+    @booking.save
+    end
+>>>>>>> e9af6c79323f2688ea2807387380ee2711add2cb
   redirect_to dashboard_path
   end
 
@@ -28,5 +33,8 @@ class BookingsController < ApplicationController
   def booking_params
     params.require(:booking).permit(:start_time, :end_time, :notes)
   end
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9af6c79323f2688ea2807387380ee2711add2cb
 end

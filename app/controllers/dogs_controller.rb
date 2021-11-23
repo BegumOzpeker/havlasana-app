@@ -32,7 +32,7 @@ class DogsController < ApplicationController
 
   private
 
-  def dog_params
+  def chef_params
     params.require(:dog).permit(:dog_name, :location, :breed, :description)
   end
 end
