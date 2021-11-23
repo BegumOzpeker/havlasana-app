@@ -3,8 +3,8 @@ class DogsController < ApplicationController
     @dogs = Dog.all
     @markers = @dogs.geocoded.map do |chef|
       {
-        lat: chef.latitude,
-        lng: chef.longitude
+        lat: dog.latitude,
+        lng: dog.longitude
       }
     end
   end
